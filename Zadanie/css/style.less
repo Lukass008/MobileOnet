@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: arial, sans-serif;
+}
+#container {
+  width: 480px;
+  min-height: 400px;
+  margin: 0 auto;
+}
+#header {
+  width: 450px;
+  height: 30px;
+  background: -moz-linear-gradient(left, #181c7f 67%, #d9d9df 98%, rgba(229, 229, 229, 0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #181c7f 67%, #d9d9df 98%, rgba(229, 229, 229, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #181c7f 67%, #d9d9df 98%, rgba(229, 229, 229, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#181c7f', endColorstr='#00e5e5e5', GradientType=1); /* IE6-9 */
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+}
+.button {
+  margin: 8px auto;
+  padding: 2px;
+  color: #181c7f;
+  border: 2px solid #181c7f;
+  font-weight: 900;
+  font-size: 12px;
+  background-color: white;
+  text-align: center;
+}
+.button#krakow {
+  text-transform: uppercase;
+}
+#content {
+  width: 100%;
+}
+.article {
+  width: 220px;
+  background: -moz-linear-gradient(top, rgba(153, 153, 153, 0.07) 27%, rgba(153, 153, 153, 0.34) 46%, rgba(164, 164, 164, 0.77) 76%, rgba(170, 170, 170, 0.77) 94%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(153, 153, 153, 0.07) 27%, rgba(153, 153, 153, 0.34) 46%, rgba(164, 164, 164, 0.77) 76%, rgba(170, 170, 170, 0.77) 94%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(153, 153, 153, 0.07) 27%, rgba(153, 153, 153, 0.34) 46%, rgba(164, 164, 164, 0.77) 76%, rgba(170, 170, 170, 0.77) 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#12999999', endColorstr='#c4aaaaaa', GradientType=0); /* IE6-9 */
+  margin: 2px;
+  color: black;
+  border-radius: 5px;
+  padding: 8px;
+  float: left;
+}
+.article p {
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 2;
+}
+.article p.location {
+  font-size: 8px;
+  margin-top: 5px;
+}
+.miniature {
+  width: 220px;
+}
+@media screen and (max-width: 320px) {
+  #container {
+    width: 100%;
+  }
+  #header {
+    width: 94%;
+    font-size: 20px;
+    height: 20px;
+    padding: 5% 3%;
+  }
+  .article {
+    width: 96%;
+    max-height: 70px;
+    margin: 1% auto;
+    padding: 2%;
+  }
+  .article img {
+    width: 100%;
+  }
+  .miniature {
+    width: 40%;
+    float: left;
+  }
+  .article p {
+    float: left;
+    margin: 0 0 0 1%;
+    width: 59%;
+  }
+  .button#krakow {
+    margin-left: 5px;
+    text-transform: none;
+    font-size: 13px;
+  }
+}
