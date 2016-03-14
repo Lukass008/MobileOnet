@@ -6,49 +6,24 @@
     <title>Najnowsze wiadomości</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
-
 <body>
+
 
 <div id="container">
     <div id="header">WIADOMOŚCI</div>
-    <div class="button" style="width: 80px;" id="krakow">Kraków</div>
+    <div class="button" id="krakow">Kraków</div>
 
     <div id="content">
 
-        <div class="article">
-            <div class="miniature"><img src="img/miniatura_480.jpg"></div>
-            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym</p>
-            <p class="location">Kraków</p>
-            <div style="clear: both"></div>
-        </div>
-
-        <div class="article">
-            <div class="miniature"><img src="img/miniatura_480.jpg"></div>
-            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym</p>
-            <p class="location">Kraków</p>
-            <div style="clear: both"></div>
-        </div>
-
-        <div class="article">
-            <div class="miniature"><img src="img/miniatura_480.jpg"></div>
-            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym</p>
-            <p class="location">Kraków</p>
-            <div style="clear: both"></div>
-        </div>
-
-        <div class="article">
-            <div class="miniature"><img src="img/miniatura_480.jpg"></div>
-            <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym</p>
-            <p class="location">Kraków</p>
-            <div style="clear: both"></div>
-        </div>
-
-        <div style="clear: both;"></div>
     </div>
-
-    <div class="button" style="width: 100px;">Pokaż więcej</div>
+    <div class="clear"></div>
+    <div class="button" id="showMore" onclick="showArticles.callFour();">Pokaż więcej</div>
 </div>
 
 
+<script type="text/javascript" src="js/addJson.js"></script>
+<script type="text/javascript" src="js/creator.js"></script>
+<script type="text/javascript" src="js/showThreads.js"></script>
 </body>
 </html>
+
